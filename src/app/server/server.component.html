@@ -1,0 +1,6 @@
+<input type="text"
+class="form-control"
+[(ngModel)]="username">
+<!-- (input)="setUsername($event)"> -->
+<p [innerText]="getUsername()"></p>
+<button class="btn btn-primary" [disabled]="!clickable" (click)="resetString()">Click</button>
